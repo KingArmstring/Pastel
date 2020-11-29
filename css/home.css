@@ -1,10 +1,4 @@
-/*common
-1.. section headers
-2..opacity hovers
-3..section padding (spaces between divs)
-4..hover efeect 1 (left to right)
-5..hover effect 2 (up to down)
-6..container سنطرة المحتوى والكلام*/
+
 *{
     margin: 0;
     padding: 0;
@@ -19,8 +13,9 @@ body{
 }
 
 .container{
-    width: 80%;
+    width: 90%;
     margin: auto;
+    
 }
 
 .list-unstyled{
@@ -43,17 +38,19 @@ header .header-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .header-content img{
-    flex: 1;
-    max-width: 170px;
+    max-width:300px;
+    height: auto;
 }
 
+
 .header-content nav{
-    flex:2;  
-    text-align: right;
-}
+
+    float: right;
+ }
 
 .header-content li{
     display: inline-block; 
@@ -61,7 +58,9 @@ header .header-content{
 }
 
 .header-content nav ul{
-    overflow: hidden;     
+    overflow: hidden; 
+    display: flex;  
+    flex-wrap: wrap;
 }
 
 .header-content nav ul li a{
@@ -110,7 +109,8 @@ li a:hover:not(.active){
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-}
+} 
+
 
 
 .slider img{
@@ -136,9 +136,12 @@ li a:hover:not(.active){
     line-height: 40px;
     color: gray;
     font-size: 20px;
-    padding-bottom: 50px;
+    padding-top:30px;
 }
 
+
+                                    /*footer*/
+                                    
 .footer{
     /*background-color: #e9e9e9;*/
     background-color:#d2bdc4;
@@ -151,30 +154,40 @@ li a:hover:not(.active){
 }
 
 .footer .footer-img img{
-    float: left;
-    flex: 1;
-    max-width: 170px;
-    margin-left: 200px;    
+    text-align: left;
+    /* flex: 1; */
+
+    display: flex;
+
+    max-width: 250px;
+    /* margin-left: 200px;*/
 }
 
 
 .footer .qa{
-    flex: 2;
-    max-width:200px ;
+    /* flex: 1; */
+    display: block;
+    
+
     text-align: center;
     margin-left:auto;
     margin-right: auto;
-    
 }
 
-.qa h2{
-    margin-bottom: 20px;
-    line-height: 40px;
-    color: #857c7c;
+.qa h4{
+    margin-bottom: 10px;
+    /* line-height: 20px; */
+    color: #c9476c;
+
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .qa p{
-    line-height: 30px;   
+   line-height: 30px;   
+    
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .qa ul li {
@@ -183,36 +196,12 @@ li a:hover:not(.active){
 }
 
 .footer .footer-list{
-    flex: 1;
-    margin-right: 200px;
+
+    margin-left: 70px;
+    margin-right: 70px;
     line-height: 20px;
-    list-style: none;
+    list-style: none;   
     line-height: 30px;
+
+   
 }
-                                     /*about*/
-
-/*.slide-container{
-    width: 800px;
-    height: 800px;
-
-} 
-
-.image-container{
-    width: 2400px;
-    height: 600px;
-    position: relative;
-    transition:left 2s ;
-    -webkit-transition:left 2s ;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-
-}
-
-.slider-image{
-    float: left;
-    margin: 0;
-    padding: 0;
-
-
-}*/
-
